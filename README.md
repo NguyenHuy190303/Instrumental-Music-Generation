@@ -4,6 +4,8 @@
 
 ## Overview
 This project implements a Conditional Variational Autoencoder (CVAE) for audio processing and music generation. The model converts audio signals into Mel Spectrograms, conditions them on genre information, and reconstructs the audio using the Griffin-Lim algorithm.
+## Demo
+......
 
 ## Features
 - **Audio Preprocessing:** Load, resample, and convert audio signals to Mel Spectrograms.
@@ -58,8 +60,6 @@ python main.py
 - tqdm
 - IPython
 
-## Demo
-A demo GIF showing the model in action will be added here.
 
 ## License
 This project is licensed under the MIT License.
