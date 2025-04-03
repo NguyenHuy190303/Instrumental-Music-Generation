@@ -1,4 +1,4 @@
-# Music CVAE Project
+# Music Gen Project
 
 ![Demo GIF](path/to/demo.gif)
 
@@ -6,7 +6,12 @@
 This project implements a Conditional Variational Autoencoder (CVAE) for audio processing and music generation. The model converts audio signals into Mel Spectrograms, conditions them on genre information, and reconstructs the audio using the Griffin-Lim algorithm.
 ## Demo
 ......
+### Illustrations:
+- ![Illustration](images/Illustration.png)  
+  *Illustration of the music generation problem based on a given musical sample.*
 
+- ![Pipeline](images/Pipeline.png)  
+  *Project overview pipeline.*
 ## Features
 - **Audio Preprocessing:** Load, resample, and convert audio signals to Mel Spectrograms.
 - **Normalization:** Normalize and denormalize Mel Spectrograms.
@@ -61,5 +66,5 @@ python main.py
 - IPython
 
 
-## License
-This project is licensed under the MIT License.
+# Acknowledgment
+I would like to express my sincere gratitude to AI Vietnam, as well as to all the TAs and mentors who have guided and supported me throughout the completion of this project.
