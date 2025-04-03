@@ -14,10 +14,11 @@ This project implements a Conditional Variational Autoencoder (CVAE) for audio p
 
 ## Project Structure
 ```
-music-cvae-project/
+Instrumental-Music-Generation/
 ├── README.md
 ├── requirements.txt
 ├── main.py
+
 └── music_gen/
     ├── __init__.py
     ├── audio_utils.py
@@ -25,6 +26,9 @@ music-cvae-project/
     ├── models.py
     ├── train.py
     └── inference.py
+└── notebooks
+    ├── instrumental-music-generation.ipynb
+
 ```
 
 ## Installation
