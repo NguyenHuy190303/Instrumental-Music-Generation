@@ -18,7 +18,6 @@ Instrumental-Music-Generation/
 ├── README.md
 ├── requirements.txt
 ├── main.py
-
 └── music_gen/
     ├── __init__.py
     ├── audio_utils.py
@@ -27,7 +26,7 @@ Instrumental-Music-Generation/
     ├── train.py
     └── inference.py
 └── notebooks
-    ├── instrumental-music-generation.ipynb
+    └── instrumental-music-generation.ipynb
 
 ```
 
