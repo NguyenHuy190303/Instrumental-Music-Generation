@@ -4,8 +4,6 @@
 
 ## Overview
 This project implements a Conditional Variational Autoencoder (CVAE) for audio processing and music generation. The model converts audio signals into Mel Spectrograms, conditions them on genre information, and reconstructs the audio using the Griffin-Lim algorithm.
-## Demo
-......
 ### Illustrations:
 - ![Illustration](images/Illustration.png)  
   *Illustration of the music generation problem based on a given musical sample.*
