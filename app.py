@@ -56,10 +56,14 @@ def gen_audio(model, audio_source, genres_list, fixed_length_seconds=3):
         split_audio_text_placeholder.empty()
 
         audios_input = torch.cat([audio[0] for audio in audios], dim=0)
+        audios_input = audios_input.to(device)
 
-        genres_input = onehot_encode(tokenize(genres_list), len(uni_genres_list))
-        genres_input = torch.tensor(genres_input, dtype=torch.long).unsqueeze(0).unsqueeze(0)
+        # Encode genres
+        genres_encoded = onehot_encode(tokenize(genres_list), len(uni_genres_list))
+        genres_input = torch.tensor(genres_encoded, dtype=torch.long).unsqueeze(0).unsqueeze(0)
         genres_input = genres_input.repeat(audios_input.shape[0], 1, 1)
+        genres_input = genres_input.to(device)
+
 
         with st.spinner("Model is generating... 🍳"):
             recons, _, _ = model(audios_input, genres_input)
@@ -71,7 +75,7 @@ def gen_audio(model, audio_source, genres_list, fixed_length_seconds=3):
         recon_audios = []
 
         for i in range(len(recons)):
-            spec_denorm = denormalize_melspec(recons[i].detach().numpy().squeeze(), audios[i][1])
+            spec_denorm = denormalize_melspec(recons[i].detach().cpu().numpy().squeeze(), audios[i][1])
             audio_reconstructed = melspec_to_audio(spec_denorm)
             recon_audios.append(audio_reconstructed)
             progress_bar.progress(int((i + 1) / len(recons) * 100))
