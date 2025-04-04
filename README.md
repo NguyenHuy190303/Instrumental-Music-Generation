@@ -38,13 +38,18 @@ Instrumental-Music-Generation/
 ```
 
 ## Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/NguyenHuy190303/Instrumental-Music-Generation.git IMG
    cd IMG
    ```
-
-2. Install the required packages:
+2. Create and activate a Conda environment:
+   ```bash
+   conda create -n music_gen python=3.10 -y
+   conda activate music_gen
+   ```
+3. Install the required packages:
    ```bash
    pip install -r requirements.txt
    ```
