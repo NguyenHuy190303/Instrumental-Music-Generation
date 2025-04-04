@@ -136,7 +136,7 @@ st.markdown(
             <a href="https://ieeexplore.ieee.org/document/1021072">*GTZAN Dataset</a>
         </div>
         <div>
-            2024 AI VIETNAM | Created by <a href="https://github.com/Koii2k3/Music-Reconstruction" target="_blank">Koii2k3</a>
+            2024 AI VIETNAM | Created by <a href="https://github.com/NguyenHuy190303/Instrumental-Music-Generation" target="_blank">Leo-AI_VIETNAM</a>
         </div>
     </div>
     """,
